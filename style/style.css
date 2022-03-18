@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+:root{
+  --cor1: #FF8097;
+  --cor2: #B374A4;
+  --cor3: #6DC5CF;
+  --cor4: #FFE494;
+  --cor5: #f0a57a5e;
+
+  --font1: Verdana, Geneva, Tahoma, sans-serif;
+  --font2: 'Sriracha', cursive;
+  --font3: 'Passion One', cursive;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
+}
+html, body{
+  min-height: 100vh;
+  background-color: var(--cor4);
+  font-family: var(--font1);
+}
+header{
+  background-color: var(--cor2);
+  color: white;
+  text-align: center;
+}
+header h1{
+  padding-top: 50px;
+  font-variant: small-caps;
+  font-family: var(--font2);
+  font-size: 4em;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.377);
+}
+header p{
+  padding-bottom: 50px;
+}
+header a, footer a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+header a:hover, footer a:hover{
+  color: var(--cor3);
+  text-decoration: underline;
+}
+section{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 1.5em;
+  padding-left: 30px;
+  font-family: var(--font3);
+  font-size: 2em; 
+}
+section p{
+  padding-bottom: 2em;
+}
+section.normal{
+  background-color: var(--cor3);
+  padding-bottom: 4vh;
+}
+section.image{
+  background-color: white;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.322);
+  background-size: cover;
+  background-attachment: fixed; 
+}
+section.image > p{
+  background-color: var(--cor5);  
+  display: inline-block;
+  padding: 10px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.377);
+  color: white;
+}
+section#foto1{
+  background-image: url('../imagens/gaiteiro.webp');
+  background-position: right center;
+  background-repeat: no-repeat;  
+}
+section#foto2{
+  background-image: url('../imagens/livros.jpg');
+  background-position: right center;
+  background-repeat: no-repeat;  
+}
+footer{
+  background-color: var(--cor2);
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding: 10px;  
+}
